@@ -1,0 +1,481 @@
+baseURL: "https://Markdowskiy.github.io/resume/"
+languageCode: "en-us"
+title: "Резюме"
+theme: hugo-profile
+relativeURLs: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+  # main:
+    #- identifier: blog
+    #  name: Blog
+    #  title: Blog posts
+    #  url: /blogs
+    #  weight: 1
+    #- identifier: gallery
+    #  name: Gallery
+    #  title: Blog posts
+    #  url: /gallery
+    #  weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Резюме"
+  description: Александр Садыков
+  # staticPath: ""  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#343a40" # original 343a40
+    secondaryTextColor: "#6c757d" # original 6c757d
+    textLinkColor: "#007bff" # original 007bff
+    backgroundColor: "#eaedf0" # original eaedf0
+    secondaryBackgroundColor: "#64ffda1a" # original 64ffda1a
+    primaryColor: "#304145" # # 007bff"
+    secondaryColor: "#f8f9fa" # original f8f9fa
+
+    # 238f51 green
+    # 3d3d3d dark gray
+    # ece9e1 light gray
+    # 3f3b37 dark brown
+    # 304145 dark green
+
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Резюме" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    # intro: "г. Казань"
+    title: "Александр Садыков"
+    subtitle: "технический писатель"
+    content: |
+      Опыт работы в IT — 1 год<br>
+      Общий стаж — 5 лет
+
+      Казань, 27 лет
+    image: "/images/3.jpg"
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Скачать резюме в PDF"
+      url: "/attachments/Sadykov_Alexandr.pdf"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+      - icon: fab fa-telegram
+        url: "https://t.me/nacifrax/"
+      - icon: fab fa-whatsapp
+        url: "https://wa.me/79174917146"
+      - icon: fa fa-envelope
+        url: "mailto:ssadykov.an@gmail.com"
+      #  - icon: fab fa-x-twitter
+      #    url: https://example.com
+      # customIcons:
+        # - icon: 
+          # url: 
+
+  # About
+  about:
+    enable: true
+    title: "О себе"
+    #image: "/images/2.jpg"
+    content: |
+      Технический писатель с опытом UX-редактуры. 
+
+      Понимаю, что хорошо написанная документация повышает лояльность и число пользователей, снижает нагрузку на службу поддержки. 
+      Умею ставить себя на место пользователя и писать просто о сложном.
+      Легко нахожу общий язык с разработчиками, аналитиками, дизайнерами.
+
+      Увлечён профессией, инициативен и креативен.
+    skills:
+      enable: true
+      title: "Навыки и технологии:"
+      items:
+        - "Пользовательская документация"
+        - "API-документация, OpenAPI"
+        - "Тексты и сценарии чатботов"
+        - "C#, ООП, Unity"
+        - "Инфостиль"
+        - "Git"
+        - "Markdown"
+        - "Hugo & Docusaurus"
+        - "Docs as code"
+        - "HTML & CSS"
+        - "Jira & Confluence"
+        - "Figma, Photoshop"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Опыт работы"
+    #subtitle: "в последних 3 компаниях"
+    items:
+      - job: "Младший технический писатель"
+        company: "Ozon Tech"
+        companyUrl: #"https://vk.company/ru/"
+        date: "С января 2024"
+        featuredLink:
+          enable: false
+          name: "MyTracker"
+          url: "https://docs.tracker.my.com/ru"
+        info:
+          enable: false
+          content:  
+        content: |
+         Работаю в команде документации для разработчиков.
+         
+         Что пишу:
+          - <a href="https://docs.ozon.ru/main/" target="_blank">публичную документацию Ozon</a>;
+          - <a href="https://clck.ru/3Ddfjo)" target="_blank">API-документацию для различных интеграций с Ozon</a>;
+          - внутреннюю техническую документацию для разработчиков в Confluence;
+          - подсказки для элементов интерфейса внутренних сервисов;
+          - ответы чатботов.
+
+          А ещё:
+          - вычитываю коллег технических писателей;
+          - делаю шорткоды для Hugo и вношу frontend-правки в тему документации;
+          - общаюсь с разработчиками и аналитиками, чтобы понятно писать о сложных продуктах и процессах.
+        
+      - job: ""
+        company: "Самообучение"
+        companyUrl: #"https://example.com"
+        date: "2023"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content:  
+        content: |
+          Менял сферу деятельности с нефтегазовой на IT.
+
+          Что делал:
+          - читал книги, статьи и чаты для технических писателей;
+          - смотрел митапы и конференции, актуальные для технических писателей;
+          - писал тексты и делал пробные проекты на Hugo и Docusaurus;
+          - изучал полезные для техписателя харды: API, Git, HTML & CSS и общую информацию об IT-индустрии;
+          - изучал C# и ООП, сделал и опубликовал игру на Unity, программу-конвертер на Windows Forms.
+
+      - job: ""
+        company: "Нефтегазовая отрасль"
+        companyUrl: #"https://example.com"
+        date: "2018–2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content:  
+        content: |
+          Работал по специальности в крупных нефтегазовых компаниях:
+          - 2022 — инженер в Транснефть — Порт Приморск;
+          - 2019–2022 — мастер в Газпром СПГ Портовая;
+          - 2018–2019 — оператор товарный в Башнефть УНПЗ.
+
+          Основная часть работы была связана с производством, но работал и с текстами:
+          писал инструкции, регламенты и проекты производства работ.
+          В 2022 году узнал о профессии «Технический писатель» и решил сменить сферу деятельности. 
+        
+      #- job: "Мастер"
+      #  company: "Газпром СПГ Портовая"
+      #  companyUrl: #"https://example.com"
+      #  date: "Август 2019 – Январь 2022"
+      #  featuredLink:
+      #    enable: false
+      #    url: "https://example.com"
+      #  info:
+      #    enable: false
+      #    content:  
+      #  content: |
+      #    Что делал:
+      #    - писал инструкции и разрабатывал технологические схемы;
+      #    - писал и проверял технологический регламент;
+      #    - создание обучающих презентаций по производственным процессам (с озвучкой и анимацией);
+      #    - составление планов работ по диагностике оборудования;
+      #    - составление перечней оборудования, трубопроводов цеха, трубопроводной арматуры;
+      #    - работа с документацией на отгружаемую продукцию;
+      #    - работа с изометрическими чертежами, проверка правильности монтажа технологических трубопроводов;
+      #    - проверка паспортов поставляемого оборудования;
+      #    - участие в проведении испытаний смонтированных трубопроводов;
+      #    - руководство отгрузкой СПГ, КГС в автоцистерны;
+      #    - руководство процессом приема сжиженного пропана, бутана, этилена, азота из автоцистерн;
+      #    - первичный сбор информации для составления программы ДТОиР;
+      #    - обеспечение исправности технологического оборудования.
+
+  # Education
+  education:
+    enable: true
+    title: "Образование"
+    index: false
+    items:
+      - title: "UX-редактор"
+        school:
+          name: "Нетология"
+          url: "https://netology.ru/programs/ux-copywriting"
+        date: "Январь – Май 2024"
+        # GPA: "3.8 out of 5.0"
+        content: |
+         Освоил навыки UX-редактора:  
+         - фреймворки Jobs to be done и Job stories;
+         - формулирование гипотезы и подбор метрик;
+         - создание сторифреймов и макетов в Figma и FigJam;
+         - определение tone of voice продукта;
+         - написание текстов с соблюдением tone of voice;
+         - проведение UX-исследований и анализ результатов;
+         - локализация, инклюзивность и адаптация под разные устройства.
+                   
+        featuredLink:
+          enable: false
+          name: "Дипломная работа"
+          url: ""
+      - title: "Инженер-проектировщик объектов транспорта и хранения нефти и газа"
+        school:
+          name: "Уфимский государственный нефтяной технический университет"
+          url: "https://rusoil.net/"
+        date: "2013 – 2019"
+        # GPA: "4.9 из 5.0"
+        content: |
+         Окончил университет с красным дипломом по специальностям:
+         - Магистратура — Проектирование и эксплуатация объектов трубопроводного транспорта углеводородов.
+         - Бакалавриат — Эксплуатация и обслуживание объектов транспорта и хранения нефти, газа  и продуктов переработки.
+          
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: false
+    title: "Достижения"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievment.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievment.jpg
+      #- title: Hugo Profile
+      #  content: Developed a theme and getting 1K+ downloads per month.
+      #  url: "https://github.com/gurusabarish/hugo-profile"
+      #  image: /images/achievment.jpg
+
+  # projects
+  projects:
+    enable: true
+    title: "Примеры работ"
+    items:
+      - title: Статьи
+        content: |
+          Примеры моих статей:
+           - <a href="https://docs.ozon.ru/common/ozon-finance/confidentiality/protection/" target="_blank">Как Оzon Банк защищает деньги клиентов</a><br>
+           - <a href="https://docs.ozon.ru/ord-help/transfer/cases/" target="_blank">Примеры передачи данных</a><br>
+           - <a href="https://docs.ozon.ru/common/ozon-finance/confidentiality/law-115/" target="_blank">Требования 115-ФЗ</a><br>
+           - <a href="https://docs.ozon.ru/performance/marketing-requests/travel/" target="_blank">Продвижение на Ozon Travel</a><br>
+           - <a href="https://docs.ozon.ru/common/ozon-finance/payments/charity/" target="_blank">Благотворительность</a><br>
+           - <a href="https://docs.ozon.ru/global/promotion/big-promotions/10-reviews/" target="_blank">Бонусы на продвижение за первые 10 отзывов о товаре</a><br>
+
+        # image: /images/projects/profile.png
+        # featured:
+          # name: Demo
+          # link: https://hugo-profile.netlify.app
+        # badges:
+          # - "Hugo"
+          # - "Bootstrap"
+          # - "Javascript"
+        # links:
+          # - icon: fa fa-envelope
+            # url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          # - icon: fab fa-github
+           # url: https://github.com/gurusabarish/hugo-profile
+          # - icon: fab fa-twitter
+          #  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: API-документация
+        content: |
+          Создал проект, добавил общее описание и схемы работы с методами, описал методы <a href="https://docs.ozon.ru/api/ilp/" target="_blank">docs.ozon.ru/api/ilp/</a>
+
+        # image: /images/projects/converter.jpg
+        # featured:
+          # name: Demo
+          # link: https://django-converter.herokuapp.com
+        # badges:
+          # - "Django"
+          # - "Bootstrap"
+        # links:
+          # - icon: fab fa-github
+            # url: https://github.com/gurusabarish/converter
+
+      #- title: Hugo Profile V2
+      #  content: A clean and simple Hugo template for personal portfolio and blog.
+      #  image: /images/projects/profile2.jpg
+      #  featured:
+      #    name: Demo V2
+      #    link: https://hugo-profile-2.netlify.app
+      #  badges:
+      #    - "Hugo"
+      #    - "Bootstrap"
+      #    - "Javascript"
+      #  links:
+      #    - icon: fab fa-github
+      #      url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    title: "Контакты"
+    content: |
+      +7 (917) 491-71-46
+
+      [ssadykov.an@gmail.com](mailto:ssadykov.an@gmail.com)
+    
+    btnName1: Написать в Телеграм
+    btnLink1: https://t.me/nacifrax/
+    
+    btnName2: Написать в WhatsApp
+    btnLink2: https://wa.me/79174917146
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      # github: 
+      # linkedin: 
+      # twitter: 
+      # instagram: 
+      telegram: nacifrax
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
