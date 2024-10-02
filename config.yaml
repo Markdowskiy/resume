@@ -203,7 +203,7 @@ params:
     title: "Опыт работы"
     #subtitle: "в последних 3 компаниях"
     items:
-      - job: "Младший технический писатель"
+      - job: "Технический писатель"
         company: "Ozon Tech"
         companyUrl: #"https://vk.company/ru/"
         date: "С января 2024"
