@@ -139,10 +139,10 @@ params:
     title: "Александр Садыков"
     subtitle: "технический писатель"
     content: |
-      Опыт работы в IT — 1 год<br>
+      Опыт работы — 1 год<br>
       Общий стаж — 5 лет
 
-      Казань, 27 лет
+      Казань, 28 лет
     image: "/images/3.jpg"
     bottomImage:
       enable: false
@@ -173,11 +173,12 @@ params:
     title: "О себе"
     #image: "/images/2.jpg"
     content: |
-      Технический писатель с опытом UX-редактуры. 
-
-      Понимаю, что хорошо написанная документация повышает лояльность и число пользователей, снижает нагрузку на службу поддержки. 
+      <!--Технический писатель с опытом UX-редактуры.
+      
+      Понимаю, что хорошо написанная документация повышает лояльность и число пользователей, снижает нагрузку на службу поддержки.-->
+      Понимаю важность документации в жизни продукта.
       Умею ставить себя на место пользователя и писать просто о сложном.
-      Легко нахожу общий язык с разработчиками, аналитиками, дизайнерами.
+      Легко нахожу общий язык с разработчиками, аналитиками и дизайнерами.
 
       Увлечён профессией, инициативен и креативен.
     skills:
@@ -185,9 +186,9 @@ params:
       title: "Навыки и технологии:"
       items:
         - "Пользовательская документация"
-        - "API-документация, OpenAPI"
+        - "API-документация, OpenAPI, Redoc"
         - "Тексты и сценарии чатботов"
-        - "C#, ООП, Unity"
+        - "C#, ООП, .NET, Unity"
         - "Инфостиль"
         - "Git"
         - "Markdown"
@@ -201,41 +202,40 @@ params:
   experience:
     enable: true
     title: "Опыт работы"
-    #subtitle: "в последних 3 компаниях"
+    #subtitle: ""
     items:
-      - job: "Технический писатель"
+      - job: "Младший технический писатель"
         company: "Ozon Tech"
-        companyUrl: #"https://vk.company/ru/"
+        companyUrl: #""
         date: "С января 2024"
         featuredLink:
           enable: false
-          name: "MyTracker"
-          url: "https://docs.tracker.my.com/ru"
+          name: ""
+          url: ""
         info:
           enable: false
           content:  
         content: |
-         Работаю в команде документации для разработчиков.
+         Работаю в группе технической документации.
          
-         Что пишу:
+         Пишу:
           - <a href="https://docs.ozon.ru/main/" target="_blank">публичную документацию Ozon</a>;
           - <a href="https://clck.ru/3Ddfjo)" target="_blank">API-документацию для различных интеграций с Ozon</a>;
           - внутреннюю техническую документацию для разработчиков в Confluence;
-          - подсказки для элементов интерфейса внутренних сервисов;
           - ответы чатботов.
 
           А ещё:
           - вычитываю коллег технических писателей;
           - делаю шорткоды для Hugo и вношу frontend-правки в тему документации;
-          - общаюсь с разработчиками и аналитиками, чтобы понятно писать о сложных продуктах и процессах.
+          - общаюсь с разработчиками и аналитиками.
         
       - job: ""
         company: "Самообучение"
-        companyUrl: #"https://example.com"
+        companyUrl: #""
         date: "2023"
         featuredLink:
           enable: false
-          url: "https://example.com"
+          url: ""
         info:
           enable: false
           content:  
@@ -244,18 +244,18 @@ params:
 
           Что делал:
           - читал книги, статьи и чаты для технических писателей;
-          - смотрел митапы и конференции, актуальные для технических писателей;
+          - смотрел митапы и конференции;
           - писал тексты и делал пробные проекты на Hugo и Docusaurus;
-          - изучал полезные для техписателя харды: API, Git, HTML & CSS и общую информацию об IT-индустрии;
+          - изучал полезные для техписателя харды: API, Git, HTML & CSS и общую информацию об индустрии;
           - изучал C# и ООП, сделал и опубликовал игру на Unity, программу-конвертер на Windows Forms.
 
       - job: ""
         company: "Нефтегазовая отрасль"
-        companyUrl: #"https://example.com"
+        companyUrl: #""
         date: "2018–2022"
         featuredLink:
           enable: false
-          url: "https://example.com"
+          url: ""
         info:
           enable: false
           content:  
@@ -306,10 +306,9 @@ params:
           name: "Нетология"
           url: "https://netology.ru/programs/ux-copywriting"
         date: "Январь – Май 2024"
-        # GPA: "3.8 out of 5.0"
+        # GPA: ""
         content: |
          Освоил навыки UX-редактора:  
-         - фреймворки Jobs to be done и Job stories;
          - формулирование гипотезы и подбор метрик;
          - создание сторифреймов и макетов в Figma и FigJam;
          - определение tone of voice продукта;
@@ -326,7 +325,7 @@ params:
           name: "Уфимский государственный нефтяной технический университет"
           url: "https://rusoil.net/"
         date: "2013 – 2019"
-        # GPA: "4.9 из 5.0"
+        # GPA: ""
         content: |
          Окончил университет с красным дипломом по специальностям:
          - Магистратура — Проектирование и эксплуатация объектов трубопроводного транспорта углеводородов.
@@ -334,8 +333,8 @@ params:
           
         featuredLink:
           enable: false
-          name: "My academic record"
-          url: "https://example.com"
+          name: ""
+          url: ""
 
   # Achievements
   achievements:
@@ -367,7 +366,7 @@ params:
            - <a href="https://docs.ozon.ru/common/ozon-finance/confidentiality/law-115/" target="_blank">Требования 115-ФЗ</a><br>
            - <a href="https://docs.ozon.ru/performance/marketing-requests/travel/" target="_blank">Продвижение на Ozon Travel</a><br>
            - <a href="https://docs.ozon.ru/common/ozon-finance/payments/charity/" target="_blank">Благотворительность</a><br>
-           - <a href="https://docs.ozon.ru/global/promotion/big-promotions/10-reviews/" target="_blank">Бонусы на продвижение за первые 10 отзывов о товаре</a><br>
+           - <a href="https://docs.ozon.ru/global/promotion/big-promotions/10-reviews/" target="_blank">Бонусы на продвижение за первые 10&nbsp;отзывов о товаре</a><br>
 
         # image: /images/projects/profile.png
         # featured:
@@ -387,7 +386,8 @@ params:
 
       - title: API-документация
         content: |
-          Создал проект, добавил общее описание и схемы работы с методами, описал методы <a href="https://docs.ozon.ru/api/ilp/" target="_blank">docs.ozon.ru/api/ilp/</a>
+          - Создал проект, добавил общее описание и схемы работы с методами, описал методы <a href="https://docs.ozon.ru/api/ilp/" target="_blank">docs.ozon.ru/api/ilp/</a>
+          - Добавлял и редактировал методы в <a href="https://clck.ru/3EWKjx" target="_blank">других проектах</a>
 
         # image: /images/projects/converter.jpg
         # featured:
